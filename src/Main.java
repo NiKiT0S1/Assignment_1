@@ -19,6 +19,10 @@ public class Main {
                 System.out.println("Answer to problem 3:");
                 problem3();
                 break;
+            case 4:
+                System.out.println("Answer to problem 4:");
+                problem4();
+                break;
         }
     }
 
@@ -77,5 +81,21 @@ public class Main {
             }
         }
         return true;
+    }
+
+    public static void problem4 () {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int fact = findFactorial(num);
+        System.out.println(fact);
+    }
+
+    public static int findFactorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        else {
+            return n * findFactorial(n - 1);
+        }
     }
 }
