@@ -27,6 +27,15 @@ public class Main {
                 System.out.println("Answer to problem 5:");
                 problem5();
                 break;
+            case 6:
+                System.out.println("Answer to problem 6:");
+                problem6();
+                break;
+            case 7:
+                System.out.println("Answer to problem 7:");
+                problem7();
+                break;
+
         }
     }
 
@@ -118,4 +127,28 @@ public class Main {
             return elementOfFib(n - 1) + elementOfFib(n - 2);
         }
     }
+
+    public static void problem6 () {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int n = sc.nextInt();
+        int result = power(a, n);
+        System.out.println(result);
+    }
+
+    public static int power(int a, int n) {
+        if (n == 0) {
+            return 1;
+        }
+        else {
+            return a * power(a, n - 1);
+        }
+    }
+
+    public static void problem7 () {
+        //int num = 4;
+        int [] arr = {1, 4, 6, 2};
+    }
+
+    //public static...
 }
