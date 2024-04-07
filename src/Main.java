@@ -8,15 +8,17 @@ public class Main {
 
         switch (problemNum) {
             case 1:
-                System.out.print("Answer to problem 1: ");
+                System.out.println("Answer to problem 1:");
                 problem1();
                 break;
             case 2:
-                System.out.println("Answer to problem 2: ");
+                System.out.println("Answer to problem 2:");
                 problem2();
                 break;
             case 3:
-                System.out.print("Answer to problem 3: ");
+                System.out.println("Answer to problem 3:");
+                problem3();
+                break;
         }
     }
 
@@ -41,11 +43,39 @@ public class Main {
         double avr = findAverage(num.length, num);
         System.out.println(avr);
     }
+
     public static double findAverage(int n, int[] arr) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
             sum += arr[i];
         }
         return (double) sum / n;
+    }
+
+    public static void problem3() {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        boolean isPrime = isPrime(num);
+        if (isPrime) {
+            System.out.println("Prime");
+        }
+        else {
+            System.out.println("Composite");
+        }
+    }
+
+    public static boolean isPrime(int num) {
+        if (num < 2) {
+            return false;
+        }
+        if (num == 2) {
+            return true;
+        }
+        for (int i = 2; i < Math.sqrt(num); i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
