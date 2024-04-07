@@ -43,6 +43,10 @@ public class Main {
                 System.out.println("Answer to problem 9:");
                 problem9();
                 break;
+            case 10:
+                System.out.println("Answer to problem 10:");
+                problem10();
+                break;
         }
     }
 
@@ -189,6 +193,23 @@ public class Main {
         }
         else {
             return findBinCoeff(n - 1, k - 1) + findBinCoeff(n - 1, k);
+        }
+    }
+
+    public static void problem10 () {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int gcd = findGCD(a, b);
+        System.out.println(gcd);
+    }
+
+    public static int findGCD(int a, int b) {
+        if (b == 0) {
+            return a;
+        }
+        else {
+            return findGCD(b, a % b);
         }
     }
 }
