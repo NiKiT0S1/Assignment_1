@@ -23,6 +23,10 @@ public class Main {
                 System.out.println("Answer to problem 4:");
                 problem4();
                 break;
+            case 5:
+                System.out.println("Answer to problem 5:");
+                problem5();
+                break;
         }
     }
 
@@ -96,6 +100,22 @@ public class Main {
         }
         else {
             return n * findFactorial(n - 1);
+        }
+    }
+
+    public static void problem5 () {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int elementOfFib = elementOfFib(num);
+        System.out.println(elementOfFib);
+    }
+
+    public static int elementOfFib(int n) {
+        if (n == 0 || n == 1) {
+            return n;
+        }
+        else {
+            return elementOfFib(n - 1) + elementOfFib(n - 2);
         }
     }
 }
