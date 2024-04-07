@@ -12,8 +12,8 @@ public class Main {
                 problem1();
                 break;
             case 2:
-                System.out.print("Answer to problem 2: ");
-                //problem2();
+                System.out.println("Answer to problem 2: ");
+                problem2();
                 break;
             case 3:
                 System.out.print("Answer to problem 3: ");
@@ -37,6 +37,15 @@ public class Main {
     }
 
     public static void problem2() {
-
+        int [] num = {4, 3, 2, 1};
+        double avr = findAverage(num.length, num);
+        System.out.println(avr);
+    }
+    public static double findAverage(int n, int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            sum += arr[i];
+        }
+        return (double) sum / n;
     }
 }
