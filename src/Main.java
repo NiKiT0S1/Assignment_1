@@ -39,6 +39,10 @@ public class Main {
                 System.out.println("Answer to problem 8:");
                 problem8();
                 break;
+            case 9:
+                System.out.println("Answer to problem 9:");
+                problem9();
+                break;
         }
     }
 
@@ -169,5 +173,22 @@ public class Main {
             }
         }
         return "Yes";
+    }
+
+    public static void problem9 () {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        int result = findBinCoeff(n, k);
+        System.out.println(result);
+    }
+
+    public static int findBinCoeff (int n, int k) {
+        if (k == 0 || n == k) {
+            return 1;
+        }
+        else {
+            return findBinCoeff(n - 1, k - 1) + findBinCoeff(n - 1, k);
+        }
     }
 }
