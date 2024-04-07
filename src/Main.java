@@ -147,7 +147,7 @@ public class Main {
 
     public static void problem7 () {
         //int num = 4;
-        int [] arr = {1, 4, 6, 2};
+        //int [] arr = {1, 4, 6, 2};
     }
 
     //public static...
