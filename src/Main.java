@@ -35,7 +35,10 @@ public class Main {
                 System.out.println("Answer to problem 7:");
                 problem7();
                 break;
-
+            case 8:
+                System.out.println("Answer to problem 8:");
+                problem8();
+                break;
         }
     }
 
@@ -151,4 +154,20 @@ public class Main {
     }
 
     //public static...
+
+    public static void problem8 () {
+        String s1 = "123456";
+        String s2 = "123a12";
+        System.out.println(isDigit(s1));
+        System.out.println(isDigit(s2));
+    }
+
+    public static String isDigit(String s) {
+        for (int i = 0; i < s.length(); i++) {
+            if(!Character.isDigit(s.charAt(i))) {
+                return "No";
+            }
+        }
+        return "Yes";
+    }
 }
