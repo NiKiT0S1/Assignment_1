@@ -1,0 +1,64 @@
+LABORATORY 1:
+"Function and Recursion"
+
+#INTRODUCTION:
+
+This self-laboratory work contains Java methods that solve various algorithmic problems.
+Each problem is implemented as a separate method in the Main class.
+This README provides instructions for interacting with the code,
+including building, testing, and running the Java program.
+
+#REQUIREMENTS:
+
+To compile and run the Java program,
+you need to have the following software installed on your system:
+
+1) Java Development Kit (JDK);
+2) Terminal or Command Prompt for running commands
+
+#INSTALLATION:
+
+Follow these steps to install and set up the project:
+
+1) Clone the repository:
+
+"git clone <repository-url>"
+
+
+2) Navigate to the project directory:
+
+"cd java-algorithmic-problems"
+
+
+3) Compile the Java files:
+
+"javac Main.java"
+
+#USAGE:
+
+After installing the project, follow these steps to run the Java program:
+
+1) Run the compiled Java program:
+
+"java Main"
+
+
+2) Follow the prompts to select a problem number
+and input any required parameters.
+
+#LIST OF PROBLEMS:
+
+The project includes implementations for the following algorithmic problems:
+
+1) Finding the minimum number in an array
+2) Calculating the average value of an array
+3) Checking if a number is prime
+4) Calculating the factorial of a number
+5) Finding the n-th element of the Fibonacci sequence
+6) Calculating the power of a number
+7) Reversing an array recursively
+8) Checking if a string consists of only digits
+9) Finding the binomial coefficient
+10) Finding the Greatest Common Divisor (GCD) of two numbers
+
+Each problem is implemented as a separate method in the Main class.
