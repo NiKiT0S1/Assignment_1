@@ -53,6 +53,10 @@ public class Main {
                 System.out.println("Answer to problem 10:");
                 problem10();
                 break;
+            case 11:
+                System.out.println("Answer to defend task:");
+                defendTask();
+                break;
         }
     }
 
@@ -457,5 +461,30 @@ public class Main {
         else {
             return findGCD(b, a % b);
         }
+    }
+
+    public static void defendTask () {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        boolean isPalindrome = isPalindrome(num);
+        //isPalindrome(num);
+        if (isPalindrome) {
+            System.out.println("True");
+        }
+        else {
+            System.out.println("False");
+        }
+    }
+
+    public static boolean isPalindrome(int num) {
+        int originalNum = num;
+        int reversedNum = 0;
+
+        while (num > 0) {
+            int digit = num % 10;
+            reversedNum = reversedNum * 10 + digit;
+            num /= 10;
+        }
+        return originalNum == reversedNum;
     }
 }
